@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Metal Detector</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header" class="alt">
+					<a href="#" onclick="history.go(-1)" class="logo">&#8592; Back</strong></a>
+				  </header>
+					</header>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+						<section id="banner" class="style8">
+							<div class="inner">
+								<span class="image">
+									<img src="../images/mixer.png" alt="" />
+								</span>
+								<header class="major">
+									<h1>Beat Frequency Metal Detector</h1>
+								</header>
+								<div class="content">
+									<p>Edgar P. Vidal, Joshua Barriga</p>
+								</div>
+							</div>
+						</section>
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Circuit Components</h1>
+									</header>
+									<p>The metal detector comprises of two main circuitry components: Colpit occilators that provide the a frequency input and a mixer circuit that takes the two frequency imputs and outputs a new frequency depending on whether a metal is detected</p>
+
+									<div class="image-container">
+										<img src="../images/opamp.png" style="width: 50%; height: auto;" alt="">
+										<img src="../images/mixer.png" style="width: 44.5%; height: auto;" alt="">
+										<figcaption><b>Figure 1:</b><t> Here is the circuit diagram for our beat frequency metal detector. While we spent several hours tuning cercuit elements such as the capacitors and the inductors, these values may not work for your build due to the impeadance of the circuit as a whole. 
+											<i>(Left: Two Colpit Occilators. Right: Mixer Circuit.) </i> </t></figcaption>		
+								</div>
+										<p></p>
+									<header class="major">
+										<h2>Colpit Occilators</h2>
+									</header>
+						
+
+									<p>
+										Our metal detector is a carefully designed and calibrated device that utilizes two Clopitt oscillators operating at a closely matched frequency. While achieving an exact frequency match is challenging, a tolerance of less than 1 kHz is acceptable for our purposes. We have selected an operating frequency of approximately 205 kHz, with a realistic range around 206 kHz.
+									</p>
+
+									<p>
+										The detection mechanism involves two oscillators, one with an open coil of 50 turns (L2) acting as the primary detector, and the other utilizing a toroid with only 5 turns (L1), specifically chosen for its minimal susceptibility to interference from nearby metals.
+									</p>
+
+									<p>
+										When a metallic object passes over the primary detector, it influences the magnetic flux within the inductor, resulting in a change in inductance and, most significantly, the frequency it produces. To ensure optimal audio output, we have observed that the voltages of both oscillators need to be equalized. Therefore, we employ op-amps to step down the voltages to approximately 2.5V.
+									</p>
+									<span class="image main" style="display: flex; justify-content: center;">
+										<img src="../images/match_freq_screenshot.png" style="width: 75%; height: auto;" alt="" />
+									  </span>
+									  <figcaption><b>Figure 2:</b>To verify the precise matching of the two Colpitts oscillators, we closely examined the waveforms they generated. By carefully adjusting the oscillators and stepping down their voltages, we ensured that they produce nearly identicle waveforms.
+										 Both oscillators resonated at approximately 205 kHz, providing further assurance of their harmonious operation. Such alignment of frequencies and waveform consistency guarantees optimal performance and reliability throughout the metal detection process. </figcaption>
+	
+									<header class="major">
+										<h2>Mixer Circuits</h2>
+									</header>
+									<p>
+										The combined signals from both oscillators are then directed to a mixer circuit, which accomplishes two main tasks: it returns the original signal and calculates the difference and sum between the two signals. To ensure the production of audible sound, we employ low-pass filters to isolate and output only the difference in frequencies. Additionally, our mixer circuit effectively eliminates any direct current (DC) components, removing any offset that could hinder the speaker's performance.
+									</p>
+
+									<p>
+										After the signals have been filtered, the resulting audio signal is amplified using an audio amplifier, allowing it to be played through a speaker with volume control. Ordinarily, the speaker would emit a constant tone corresponding to the original frequency difference between the two oscillators. However, when a metal object is placed over the detector, the frequency of one oscillator changes, giving rise to a new frequency difference. This new difference is amplified and translated into a distinct tone.
+									</p>
+									<span class="image main" style="display: flex; justify-content: center;">
+										<img src="../images/metal_results.png" style="width: 75%; height: auto;" alt="" />
+									  </span>
+									  <figcaption><b>Figure 3:</b>During our demonstration, we achieved a frequency difference of 1.7 kHz, effectively showcasing the functionality of our beat frequency metal detector.
+									  </figcaption>
+									<span class="image main" style="display: flex; justify-content: center;">
+										<img src="../images/metal_detector.jpg" style="width: 75%; height: auto;" alt="" />
+									  </span>
+									  <figcaption><b>Figure 4:</b><em> Travel size metal detector! Note that the 12 volt input and the two tuned inudctors are not plugged in. This highlights
+										the simplicity of our beat frequency metal detector, just don't forget the batteries! </em></figcaption>
+										<p></p>
+										<p><em>
+											We take great pride in presenting our meticulously crafted metal detector, showcasing its ability to detect and distinguish various metallic objects with precision and accuracy.
+										</em></p>
+								</div>
+								
+								
+							</section>
+							
+
+					</div>
+			
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/edgar-perez-vidal/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://www.instagram.com/edgar_thepaisano/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/edgar-perez-vidal" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="mailto:e.vidal8392@berkeley.edu" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Edgar Perez Vidal</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
