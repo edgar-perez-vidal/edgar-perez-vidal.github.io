@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Black Holes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header" class="alt">
+					<a href="#" onclick="history.go(-1)" class="logo">&#8592; Back</strong></a>
+				  </header>
+					</header>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+						<section id="banner" class="style8">
+							<div class="inner">
+								<span class="image">
+									<img src="../images/blackhole.jpg" alt="" />
+								</span>
+								<header class="major">
+									<h1>Photon Trajectories Near None-Rotating Black Holes</h1>
+								</header>
+								<div class="content">
+									<p>Edgar P. Vidal, Takeshi Nagasawa</p>
+								</div>
+							</div>
+						</section>
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Abstract</h1>
+									</header>
+									<p>Inspired by the German physicist, Von Laue (1879–1960), who was the first person to publish a diagram showing the trajectory of light so strongly affected by gravity, we present a visualization of photons near a compact object at the 'gravitational cutoff' formally known today as a black hole. We will derive the equations of motion for a photon orbiting a black hole directly from the Schwarzchild metric. The solutions can be derived by hand to a certain point, but in our case, we opted for numerical code to solve differential equations through iterative analysis. We will not only provide diagram's of the photon orbits, but also provide an animation that  displays the time dilation of a photon from an observers perspective along with source code to run it on your own computer.
+									</p>
+									<span class="image main" style="display: flex; justify-content: center;">
+										<img src="../images/photon_trajectories.png" style="width: 65%; height: auto;" alt="" />
+									  </span>
+									  <figcaption><b>Figure 1: </b><t>This is a slice of the &theta; = &pi;/2 equitorial plane. We see the for a small enough impact parameter &#98, photons will simply fall into the black hole. Similarly, for large enough &#98;, we find that photons are deflected by some angle &phi;. But the most interesting case, with &#98; &#8776; 2.5 we find that photons can actually orbit around the black hole. This phenomenon is momentary and occurs at the photon sphere located at r = 3/2r<sub>s</sub> which was theorized by from the critical points of the effective potential. Something to note is that this unstable orbit produces two cases. One where the photon simply falls in, and the other where the photon actually loops around the black hole and off infinity. These two trajectories are overlayed to highlight the split that can occur.</t></figcaption>
+									  <header class="major">
+										<h1>Derving The Equations Of Motion and Code (coming soon)</h1>
+									</header>	
+									
+								</div>
+								<head>
+									<title>Video Example</title>
+									<style>
+									  .video-container {
+										display: flex;
+										justify-content: center;
+										align-items: center;
+										height: auto;
+									  }
+									  
+									  .video-container video {
+										width: 65%;
+									  }
+									</style>
+								  </head>
+								  <head>
+									<title>Schwarzschild Metric</title>
+									<style>
+									  .centered {
+										text-align: center;
+									  }
+									</style>
+								  </head>
+								  <body>
+									<div class="video-container">
+									  <video controls id="myVideo">
+										<source src="../images/photons.MP4" type="video/mp4">
+										Photon Trajectories Animation
+									  </video>
+									</div>
+									<script>
+									  var video = document.getElementById("myVideo");
+									  video.playbackRate = 2.0;
+									</script>
+							</section>
+							
+
+					</div>
+			
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/edgar-perez-vidal/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://www.instagram.com/edgar_thepaisano/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/edgar-perez-vidal" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="mailto:e.vidal8392@berkeley.edu" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Edgar Perez Vidal</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
