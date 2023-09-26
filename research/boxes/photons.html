@@ -53,135 +53,90 @@
 									<header class="major">
 										<h1>Derving The Equations Of Motion and Code </h1>
 									</header>	
-									<!DOCTYPE html>
-								<html>
-								<head>
-									<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-								</head>
-								<body>
-									<div class="math">
-										<p>Schwarzschild Metric</p>
-										<p>\[ dS^2 = -\left(1 - \frac{r_s}{r}\right)c^2dt^2 + \frac{1}{\left(1-\frac{r_s}{r}\right)}dr^2 + r^2 d\Omega^2 \]</p>
-										<p>where \(d\Omega^2 = d\theta^2 + \sin^2(\theta)d\phi^2\)</p>
+									<html>
+										<head>
+											<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+										</head>
+										<body>
+											<div class="math">
+												<p>Schwarzschild Metric</p>
+												<p>\[ dS^2 = -\left(1 - \frac{r_s}{r}\right)c^2dt^2 + \frac{1}{\left(1-\frac{r_s}{r}\right)}dr^2 + r^2 d\Omega^2 \]</p>
+												<p>where \(d\Omega^2 = d\theta^2 + \sin^2(\theta)d\phi^2\)</p>
+		
+												<p>Using light \(dS^2 = 0\) and \(\theta = \frac{\pi}{2} \) such that \(d\theta = 0 \), the Schwarzschild Metric becomes:</p>
+												<p>\[0 = -\left(1 - \frac{r_s}{r}\right)c^2dt^2 + \frac{1}{\left(1-\frac{r_s}{r}\right)}dr^2 + r^2 d\phi^2 \]</p>
+		
+												<p>"For light, the metric interval has \(dS^2 = 0\) (called a light-like, or null geodesic) and so the proper time of any light-like path is \(\tau = 0\). We thus cannot use proper-time as a parameter to describe a light-like geodesic. We can use, however, some other parameter (call it \(\sigma\)) that marks off positions along the photon trajectory. It will not be important exactly how we define \(\sigma\) here. Simply note that the constants of motion will be as before but with \(d\tau\) replaced by \(d\sigma\". - Daniel Kasen</p>
+		
+												<p>\(e = g_t \frac{dt}{d\sigma}\) if metric independent of \(t\)</p>
+												<p>\(\ell = g_\phi \frac{d\phi}{d\sigma}\) if metric independent of \(\phi\)</p>
+		
+												<p>Then, we can divide our updated Schwarzschild metric by \(d\sigma^2\) to get:</p>
+												<p>\[0 = -\left(1 - \frac{r_s}{r}\right)c^2\frac{dt^2}{d\sigma^2} + \frac{1}{\left(1-\frac{r_s}{r}\right)}\frac{dr^2}{d\sigma^2} + r^2\frac{d\phi^2}{d\sigma^2} \]</p>
+		
+												<p>Plugging in \(e^2 = \left(1 - \frac{r_s}{r}\right)^2 c^4 \frac{dt^2}{d\sigma^2}\) and \(\ell^2 = r^4 \frac{d\phi^2}{d\sigma^2}\), we get:</p>
+												<p>\[0 = -\frac{e^2}{\left(1 - \frac{r_s}{r}\right)c^2} + \frac{1}{\left(1-\frac{r_s}{r}\right)}\frac{dr^2}{d\sigma^2} + \frac{\ell^2}{r^2} \]</p>
+		
+												<p>Multiplying through by \(\left(1 - \frac{r_s}{r}\right)\), we get that:</p>
+												<p>\[0 = -\frac{e^2}{c^2} + \frac{dr^2}{d\sigma^2} + \frac{\ell^2}{r^2}\left(1 - \frac{r_s}{r}\right) \]</p>
+		
+												<p>\[\frac{e^2}{c^2} = \frac{dr^2}{d\sigma^2} + \frac{\ell^2}{r^2} - \frac{\ell^2 r_s}{r^3} \]</p>
+		
+												<p>Here we have the general equation \(\frac{e^2}{c^2} = \frac{dr^2}{d\sigma^2} + V_{\text{eff}}(r)\) with:</p>
+												<p>\[V_{\text{eff}}(r) = \frac{\ell^2}{r^2} - \frac{\ell^2 r_s}{r^3}\]</p>
+		
+												<p>By setting \(\frac{d V_{\text{eff}}(r)}{dr} = 0\), we can find an unstable orbit at \(r_p = \frac{3}{2} r_s\). This region is known as the photon sphere and is an orbit where photons can momentarily orbit a non-rotating black hole.</p>
+		
+												<p>Before I continue, let's define \(e\) and \(\ell\) as the specific energy and specific angular momentum. Both \(e\) and \(\ell\) are constants of motion, thus we can expect that the ratio of \(e\) and \(\ell\) are also constants of motion. Consider a photon traveling tangentially to the radius of closest approach of a black hole, such that \(\frac{dr}{d\sigma} = 0\) and \(r = r_m\) is the radius of closest approach. The metric then becomes:</p>
+		
+												<p>\[\frac{e^2}{c^2} =  \frac{\ell^2}{r_m^2} - \frac{\ell^2 r_s}{r_m^3} \]</p>
+		
+												<p>Multiplying through by \(c^2\) and dividing through by \(\ell^2\) we get:</p>
+												<p>\[\frac{e^2}{\ell^2} =  \frac{c^2}{r_m^2} - \frac{c^2 r_s}{r_m^3}\]</p>
+		
+												<p>\[\frac{e^2}{\ell^2} =  \frac{c^2}{r_m^2} \left(1 - \frac{r_s}{r_m}\right)\]</p>
+		
+												<p>\[\frac{e}{\ell} =  \frac{c}{r_m} \sqrt{1 - \frac{r_s}{r_m}}\]</p>
+		
+												<p>We can simplify this expression by setting \(b =  r_m \left(1 - \frac{r_s}{r_m}\right)^{-1/2}\) so that we write the specific energy to specific angular momentum of a photon in terms of the impact parameter \(b\).</p>
+		
+												<p>\[\frac{e}{\ell} = \frac{c}{b} \text{ where } b = r_m \left(1 - \frac{r_s}{r_m}\right)^{-1/2}\]</p>
+		
+												<p>Now, in order to solve the trajectory of a black hole, \(r(\phi)\), we can use the metric and use the chain rule to find a differential equation \(\frac{dr}{d\phi}\).</p>
+		
+												<p>\[\frac{dr}{d\sigma} = \frac{dr}{d\phi} \frac{d\phi}{d\sigma}\]</p>
+		
+												<p>\[\frac{e^2}{c^2} = \frac{dr^2}{d\phi^2} \frac{\ell^2}{r^4} + \frac{\ell^2}{r^2} - \frac{\ell^2 r_s}{r^3}\]</p>
+		
+												<p>We already know that \(\frac{d\phi^2}{d\sigma^2} = \frac{\ell^2}{r^4}\) so we can substitute this into the metric:</p>
+		
+												<p>\[\frac{e^2}{c^2} = \frac{dr^2}{d\phi^2} \frac{\ell^2}{r^4} + \frac{\ell^2}{r^2} - \frac{\ell^2 r_s}{r^3}\]</p>
+		
+												<p>Now, solve for \(\frac{dr}{d\phi}\) by multiplying through by \(\frac{r^4}{\ell^2}\):</p>
+		
+												<p>\[\frac{dr^2}{d\phi^2} = \frac{r^4}{\ell^2}\frac{e^2}{c^2} - \frac{r^4}{\ell^2}\frac{\ell^2}{r^2} - \frac{r^4}{\ell^2}\frac{\ell^2 r_s}{r^3}\]</p>
+		
+												<p>Lastly, make the substitution \(\frac{e}{\ell} = \frac{c}{b}\):</p>
+		
+												<p>\[\frac{dr^2}{d\phi^2} = \frac{r^4}{b^2} - r^2 - r r_s \]</p>
+		
+												<p>Pulling out an \(r^2\) and taking the square root of both sides, we find the differential equation:</p>
+		
+												<p>\[\frac{dr}{d\phi} = r\sqrt{\frac{r^2}{b^2} - \left(1 - \frac{r_s}{r}\right)}\]</p>
+		
+												<p>It doesn't take too long to figure out this function is not integrable by trivial methods, so in order to find \(r(\phi)\), I will do this iteratively by setting:</p>
+		
+												<p>\[ r = r_0 + \frac{dr}{d\phi} d\phi \]</p>
+		
+												<p>\[ \phi = \phi_0 + d\phi \]</p>
+		
+												<p>where \(d\phi\) is some small step \(d\phi << 1\), \(\frac{dr}{d\phi}|_{r=r_0}\), and choosing some initial conditions \(r_0\), \(\phi_0\), \(b\), \(r_s\). The challenge is to choose the right initial conditions and iterate this through the entire trajectory of a photon!</p>
+											</div>
+										</body>
+										</html>
+										
+										
 
-										<p>Using light \(dS^2 = 0\) and \(\theta = \frac{\pi}{2} \) such that \(d\theta = 0 \), the Schwarzschild Metric becomes:</p>
-										<p>\[0 = -\left(1 - \frac{r_s}{r}\right)c^2dt^2 + \frac{1}{\left(1-\frac{r_s}{r}\right)}dr^2 + r^2 d\phi^2 \]</p>
-
-										<p>"For light, the metric interval has \(dS^2 = 0\) (called a light-like, or null geodesic) and so the proper time of any light-like path is \(\tau = 0\). We thus cannot use proper-time as a parameter to describe a light-like geodesic. We can use, however, some other parameter (call it \(\sigma\)) that marks off positions along the photon trajectory. It will not be important exactly how we define \(\sigma\) here. Simply note that the constants of motion will be as before but with \(d\tau\) replaced by \(d\sigma\". - Daniel Kasen</p>
-
-										<p>\(e = g_t \frac{dt}{d\sigma}\) if metric independent of \(t\)</p>
-										<p>\(\ell = g_\phi \frac{d\phi}{d\sigma}\) if metric independent of \(\phi\)</p>
-
-										<p>Then, we can divide our updated Schwarzschild metric by \(d\sigma^2\) to get:</p>
-										<p>\[0 = -\left(1 - \frac{r_s}{r}\right)c^2\frac{dt^2}{d\sigma^2} + \frac{1}{\left(1-\frac{r_s}{r}\right)}\frac{dr^2}{d\sigma^2} + r^2\frac{d\phi^2}{d\sigma^2} \]</p>
-
-										<p>Plugging in \(e^2 = \left(1 - \frac{r_s}{r}\right)^2 c^4 \frac{dt^2}{d\sigma^2}\) and \(\ell^2 = r^4 \frac{d\phi^2}{d\sigma^2}\), we get:</p>
-										<p>\[0 = -\frac{e^2}{\left(1 - \frac{r_s}{r}\right)c^2} + \frac{1}{\left(1-\frac{r_s}{r}\right)}\frac{dr^2}{d\sigma^2} + \frac{\ell^2}{r^2} \]</p>
-
-										<p>Multiplying through by \(\left(1 - \frac{r_s}{r}\right)\), we get that:</p>
-										<p>\[0 = -\frac{e^2}{c^2} + \frac{dr^2}{d\sigma^2} + \frac{\ell^2}{r^2}\left(1 - \frac{r_s}{r}\right) \]</p>
-
-										<p>\[\frac{e^2}{c^2} = \frac{dr^2}{d\sigma^2} + \frac{\ell^2}{r^2} - \frac{\ell^2 r_s}{r^3} \]</p>
-
-										<p>Here we have the general equation \(\frac{e^2}{c^2} = \frac{dr^2}{d\sigma^2} + V_{\text{eff}}(r)\) with:</p>
-										<p>\[V_{\text{eff}}(r) = \frac{\ell^2}{r^2} - \frac{\ell^2 r_s}{r^3}\]</p>
-
-										<p>By setting \(\frac{d V_{\text{eff}}(r)}{dr} = 0\), we can find an unstable orbit at \(r_p = \frac{3}{2} r_s\). This region is known as the photon sphere and is an orbit where photons can momentarily orbit a non-rotating black hole.</p>
-
-										<p>Before I continue, let's define \(e\) and \(\ell\) as the specific energy and specific angular momentum. Both \(e\) and \(\ell\) are constants of motion, thus we can expect that the ratio of \(e\) and \(\ell\) are also constants of motion. Consider a photon traveling tangentially to the radius of closest approach of a black hole, such that \(\frac{dr}{d\sigma} = 0\) and \(r = r_m\) is the radius of closest approach. The metric then becomes:</p>
-
-										<p>\[\frac{e^2}{c^2} =  \frac{\ell^2}{r_m^2} - \frac{\ell^2 r_s}{r_m^3} \]</p>
-
-										<p>Multiplying through by \(c^2\) and dividing through by \(\ell^2\) we get:</p>
-										<p>\[\frac{e^2}{\ell^2} =  \frac{c^2}{r_m^2} - \frac{c^2 r_s}{r_m^3}\]</p>
-
-										<p>\[\frac{e^2}{\ell^2} =  \frac{c^2}{r_m^2} \left(1 - \frac{r_s}{r_m}\right)\]</p>
-
-										<p>\[\frac{e}{\ell} =  \frac{c}{r_m} \sqrt{1 - \frac{r_s}{r_m}}\]</p>
-
-										<p>We can simplify this expression by setting \(b =  r_m \left(1 - \frac{r_s}{r_m}\right)^{-1/2}\) so that we write the specific energy to specific angular momentum of a photon in terms of the impact parameter \(b\).</p>
-
-										<p>\[\frac{e}{\ell} = \frac{c}{b} \text{ where } b = r_m \left(1 - \frac{r_s}{r_m}\right)^{-1/2}\]</p>
-
-										<p>Now, in order to solve the trajectory of a black hole, \(r(\phi)\), we can use the metric and use the chain rule to find a differential equation \(\frac{dr}{d\phi}\).</p>
-
-										<p>\[\frac{dr}{d\sigma} = \frac{dr}{d\phi} \frac{d\phi}{d\sigma}\]</p>
-
-										<p>\[\frac{e^2}{c^2} = \frac{dr^2}{d\phi^2} \frac{\ell^2}{r^4} + \frac{\ell^2}{r^2} - \frac{\ell^2 r_s}{r^3}\]</p>
-
-										<p>We already know that \(\frac{d\phi^2}{d\sigma^2} = \frac{\ell^2}{r^4}\) so we can substitute this into the metric:</p>
-
-										<p>\[\frac{e^2}{c^2} = \frac{dr^2}{d\phi^2} \frac{\ell^2}{r^4} + \frac{\ell^2}{r^2} - \frac{\ell^2 r_s}{r^3}\]</p>
-
-										<p>Now, solve for \(\frac{dr}{d\phi}\) by multiplying through by \(\frac{r^4}{\ell^2}\):</p>
-
-										<p>\[\frac{dr^2}{d\phi^2} = \frac{r^4}{\ell^2}\frac{e^2}{c^2} - \frac{r^4}{\ell^2}\frac{\ell^2}{r^2} - \frac{r^4}{\ell^2}\frac{\ell^2 r_s}{r^3}\]</p>
-
-										<p>Lastly, make the substitution \(\frac{e}{\ell} = \frac{c}{b}\):</p>
-
-										<p>\[\frac{dr^2}{d\phi^2} = \frac{r^4}{b^2} - r^2 - r r_s \]</p>
-
-										<p>Pulling out an \(r^2\) and taking the square root of both sides, we find the differential equation:</p>
-
-										<p>\[\frac{dr}{d\phi} = r\sqrt{\frac{r^2}{b^2} - \left(1 - \frac{r_s}{r}\right)}\]</p>
-
-										<p>It doesn't take too long to figure out this function is not integrable by trivial methods, so in order to find \(r(\phi)\), I will do this iteratively by setting:</p>
-
-										<p>\[ r = r_0 + \frac{dr}{d\phi} d\phi \]</p>
-
-										<p>\[ \phi = \phi_0 + d\phi \]</p>
-
-										<p>where \(d\phi\) is some small step \(d\phi << 1\), \(\frac{dr}{d\phi}|_{r=r_0}\), and choosing some initial conditions \(r_0\), \(\phi_0\), \(b\), \(r_s\). The challenge is to choose the right initial conditions and iterate this through the entire trajectory of a photon!</p>
-									</div>
-								</body>
-								</html>
-								<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .box {
-            border: 1px solid #ccc;
-            padding: 20px;
-            background-color: #f7f7f7;
-            width: 200px;
-            text-align: center;
-            margin: 10px;
-        }
-
-        .box a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            display: block;
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="box">
-            <a href="https://github.com/edgar-perez-vidal/C161_Final_project">Code</a>
-        </div>
-        <div class="box">
-            <a href="downloads/Astro_C161_Final_Project.pdf" download>Write Up</a>
-        </div>
-    </div>
-</body>
-</html>
 
 								
 								</div>
