@@ -2402,7 +2402,7 @@ input, select, textarea {
 				}
 
 					ul.pagination li > .page.active:hover {
-						background-color: #9bf1ff;
+						background-color: #ee9bff;
 						color: #242943 !important;
 					}
 
@@ -2831,15 +2831,15 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: hsla(248, 41%, 23%, 0.631);
+				background-color: hsla(249, 54%, 17%, 0.582);
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: hsla(248, 41%, 23%, 0.631);
+				background-color: hsla(248, 27%, 27%, 0.631);
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color:  hsla(248, 41%, 23%, 0.631);
+				background-color:  hsla(248, 27%, 27%, 0.631);
 			}
 
 			.tiles article:nth-child(6n - 2):before {
@@ -2847,7 +2847,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #8ea9e8;
+				background-color: #1e2e53;
 			}
 
 			.tiles article:nth-child(6n):before {
