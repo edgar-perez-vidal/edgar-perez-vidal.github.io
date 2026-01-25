@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #242943;
+		background: #3c4355;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -118,7 +118,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #ffffff;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 17pt;
+		font-size: 7pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
 		line-height: 1.65;
@@ -135,7 +135,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -1957,7 +1957,7 @@ input, select, textarea {
 
 		select option {
 			color: #ffffff;
-			background: #242943;
+			background: #3c4355;
 		}
 
 		select:focus::-ms-value {
@@ -2854,7 +2854,7 @@ input, select, textarea {
 				background-color: #69426664;
 			}
 			.tiles article:nth-child(6n+1):before {
-				background-color: #39426464;
+				background-color: #424a6964;
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -2941,7 +2941,7 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
-			background-color: #2e3450;
+			background-color: #3c4355;
 		}
 
 			.spotlights > section > .image {
@@ -3117,7 +3117,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #2a2f4a;
+		background-color: #3c4355;
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
@@ -3413,7 +3413,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #242943;
+			background-color: #3c435583;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3494,27 +3494,27 @@ input, select, textarea {
 			}
 
 		#banner.style1:after {
-			background-color: #6fc3df;
+			background-color: #916fdf99;
 		}
 
 		#banner.style2:after {
-			background-color: #8d82c4;
+			background-color: #8d82c49b;
 		}
 
 		#banner.style3:after {
-			background-color: #ec8d81;
+			background-color: #ec818196;
 		}
 
 		#banner.style4:after {
-			background-color: #e7b788;
+			background-color: #88b9e768;
 		}
 
 		#banner.style5:after {
-			background-color: #8ea9e8;
+			background-color: #8ea9e886;
 		}
 
 		#banner.style6:after {
-			background-color: #87c5a4;
+			background-color: #55567b9d;
 		}
 
 		body.is-preload #banner:after {
@@ -3592,7 +3592,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #2a2f4a;
+		background-color: #3c4355;
 	}
 
 		#main > * {
@@ -3718,7 +3718,7 @@ input, select, textarea {
 
 		#footer .copyright li {
 			border-left: solid 1px rgba(212, 212, 255, 0.1);
-			color: rgba(244, 244, 255, 0.2);
+			color: rgb(244, 244, 255);
 			display: inline-block;
 			line-height: 1;
 			margin-left: 1em;
@@ -3801,7 +3801,7 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		pointer-events: none;
-		background: rgba(36, 41, 67, 0.9);
+		background: #3c4355;
 		box-shadow: none;
 		height: 100%;
 		left: 0;
@@ -3929,7 +3929,7 @@ input, select, textarea {
 			}
 
 	body.is-ie #menu {
-		background: rgba(42, 47, 74, 0.975);
+		background: #3c4355;
 	}
 
 	body.is-menu-visible #wrapper {
