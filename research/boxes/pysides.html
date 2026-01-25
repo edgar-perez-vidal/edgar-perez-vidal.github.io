@@ -17,12 +17,12 @@
 				opacity: 0 !important;
 			}
 			p {
-				font-size: 1.3em;   /* try 1.1–1.25em */
+				font-size: 1.2em;   /* try 1.1–1.25em */
 				line-height: 1.6;
 			}
 			/* Fix banner title spacing */
 			#banner .major h1 {
-				line-height: 1.2 !important;
+				line-height: 1.5 !important;
 			}
 
 			/* Make overview section white background */
@@ -76,6 +76,9 @@
 				background-color: black !important;
 				color: white !important;
 			}
+			.spotlights .actions a.button {
+				font-size: 1.2em;      /* increase from default */
+			}
 		</style>
 	</head>
 	
@@ -98,7 +101,8 @@
 							<img src="../images/miri_nircam_image.png" alt="JWST MIRI NIRCam visualization" />
 						</span>
 						<header class="major" style="text-align:center; margin-bottom:0;">
-							<h1 style="line-height: 1.0;">Modeling the JWST MIRI Counts, Insights Into the Source Properties and Role of Dust-Obscured AGN</h1>
+							<h2 style="line-height: 1.5; font-size: 2.55em;">
+								Modeling the JWST MIRI Counts, Insights Into the Source Properties and Role of Dust-Obscured AGN</h2>
 						</header>
 						<div class="content">
 							<p><strong>Authors:</strong> Edgar P. Vidal, Anna Sajina, Amber R. Banks, Matthieu Béthermin, Carl Ferkinhoff, Andreea Petric, Alexandra Pope, Jianwei Lyu, Vivian U, L. Y. Aaron Yung, Pallavi Patil</p>
@@ -124,9 +128,35 @@
 					<p>The code for pySIDES is available <a href="https://gitlab.lam.fr/mbethermin/sides-public-release" target="SIDES public release" rel="noopener noreferrer">here</a>, and we plan to merge these updates into the main repository soon.</p>
 					</div>
 				</section>
-
 				<!-- Results Spotlights -->
+				 
 				<section id="two" class="spotlights">
+					<!-- AGN SEDs -->
+					<section>
+						<a href="../images/agn_seds.png" class="image">
+							<img src="../images/agn_seds.png" alt="AGN SEDs" data-position="center center" />
+						</a>
+						<div class="content">
+							<div class="inner">
+								<header class="major">
+									<h1>AGN SEDs</h1>
+								</header>
+									<p>
+									Sample of the modified mid-IR SED template catalog from A. Kirkpatrick et al. 2015, normalized to <span>\(L_{\rm IR,tot} = 1 L_\odot\)</span>. 
+									The SEDs are offset for easier interpretation. Star-forming galaxies are defined as <span>\(f_{\rm AGN,MIR} &lt; 0.2\)</span>, 
+									composite galaxies as <span>\(f_{\rm AGN,MIR} \in [0.2, 0.8]\)</span>, and AGN as <span>\(f_{\rm AGN,MIR} &gt; 0.8\)</span>. 
+									The procedure for adding the stellar contribution to the SED is summarized in Section 3.4. 
+									Only modeled galaxies with <span>\(f_{\rm AGN} &gt; 0.2\)</span> adopt this template library. 
+									Adapted from Figure 2 in Vidal et al. (2025). These SEDs were compared to CIGALE model outputs in the context of Machine Learning in 
+									<a href="https://arxiv.org/abs/2506.03130" target="">Hamblin et al. (2025)</a>.
+									</p>
+									</p>
+								<ul class="actions">
+									<li><a href="../downloads/agn_seds.zip" class="button" download>Download AGN SEDS</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
 					<!-- Galaxy Counts -->
 					<section>
 						<a href="../images/galaxy_counts.png" class="image">
@@ -139,7 +169,7 @@
 								</header>
 								<p>Integral number counts in the MIRI F1500W band for all galaxy populations from the pySIDES model, compared with other theoretical models and observational data. Adapted from Figure 6 of Vidal et al. (2025). Galaxy counts in 8 MIRI bands are available.</p>
 								<ul class="actions">
-									<li><a href="downloads/galaxy_number_counts.zip" class="button" download>Download Galaxy Counts</a></li>
+									<li><a href="../downloads/galaxy_number_counts.zip" class="button" download>Download Galaxy Counts</a></li>
 								</ul>
 							</div>
 						</div>
@@ -157,10 +187,12 @@
 								</header>
 								<p>Contributions from star-forming composite AGN (blue), AGN-dominated systems (blue), and their combined contribution (black) to the total galaxy counts (gray), compared with results from Lyu et al. (2024). Adapted from Figure 11 of Vidal et al. (2025). AGN counts in 8 MIRI bands are available.</p>
 								<ul class="actions">
-									<li><a href="downloads/agn_number_counts.zip" class="button" download>Download AGN Counts</a></li>
+									<li><a href="../downloads/agn_number_counts.zip" class="button" download>Download AGN Counts</a></li>
 								</ul>
 							</div>
+							
 						</div>
+						
 					</section>
 
 					<!-- Color-Color Diagrams -->
@@ -193,8 +225,8 @@
 								</header>
 								<p>Quantification of cosmic variance effects showing that surveys with areas below 25 arcmin<sup>2</sup> suffer from approximately 30% uncertainty in bright AGN counts.
 								Thankfully, imaging surveys like <a href="https://kirkpatrick.ku.edu/MEGA/" target="_blank" rel="noopener noreferrer">MEGA</a> (PI: Alison Kirkpatrick) and <a href="https://minerva.colorado.edu/?ra=34.2257767&dec=-5.2493753&zoom=9" target="_blank" rel="noopener noreferrer">MINERVA</a> (PI: Adam Muzzin) will be able to mitigate these effects. Data to reproduce this plot is available</p>
-
-									<li><a href="downloads/cosmic_variance.zip" class="button" download>Download Cosmic Variance</a></li>
+								<ul class="actions">
+									<li><a href="../downloads/cosmic_variance.zip" class="button" download>Download Cosmic Variance</a></li>
 								</ul>
 							</div>
 						</div>
@@ -228,6 +260,8 @@
 		<script src="../assets/js/breakpoints.min.js"></script>
 		<script src="../assets/js/util.js"></script>
 		<script src="../assets/js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 
 	</body>
 </html>
