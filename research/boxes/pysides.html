@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>Modeling The JWST Number Counts</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<style>
+			/* Remove opaque overlay from banner */
+			#banner.style8:before {
+				opacity: 0 !important;
+			}
+			p {
+				font-size: 1.3em;   /* try 1.1–1.25em */
+				line-height: 1.6;
+			}
+			/* Fix banner title spacing */
+			#banner .major h1 {
+				line-height: 1.2 !important;
+			}
+
+			/* Make overview section white background */
+			#one {
+				background-color: white !important;
+				color: black !important;
+			}
+
+			#one h1, #one h2, #one h3, #one h4, #one h5, #one h6,
+			#one p, #one li, #one span {
+				color: black !important;
+			}
+
+			#one a {
+				color: #0066cc !important;
+				text-decoration: underline;
+			}
+
+			#one a:hover {
+				color: #0052a3 !important;
+			}
+
+			/* Force spotlight sections to have white background */
+			.spotlights section:nth-child(odd),
+			.spotlights section:nth-child(even) {
+				background-color: white !important;
+			}
+			.spotlights h1 {
+				color: black !important;
+			}
+			/* Force content areas to have white background */
+			.spotlights .content {
+				background-color: white !important;
+			}
+
+			/* Make all text in spotlights black */
+			.spotlights h3, .spotlights h4, .spotlights p {
+				color: black !important;
+			}
+		
+			#banner .content p {
+				font-size: .8em !important;
+			}
+			/* Style download links like the original template button */
+			.spotlights .actions a {
+				color: black !important;
+				border-color: black !important;
+			}
+
+			.spotlights .actions a:hover {
+				background-color: black !important;
+				color: white !important;
+			}
+		</style>
+	</head>
+	
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header" class="alt">
+				<a href="#" onclick="history.go(-1)" class="logo">&#8592; Back</a>
+			</header>
+
+			<!-- Main -->
+			<div id="main" class="alt">
+				<!-- Banner -->
+				<section id="banner" class="style8">
+					<div class="inner">
+						<span class="image">
+							<img src="../images/miri_nircam_image.png" alt="JWST MIRI NIRCam visualization" />
+						</span>
+						<header class="major" style="text-align:center; margin-bottom:0;">
+							<h1 style="line-height: 1.0;">Modeling the JWST MIRI Counts, Insights Into the Source Properties and Role of Dust-Obscured AGN</h1>
+						</header>
+						<div class="content">
+							<p><strong>Authors:</strong> Edgar P. Vidal, Anna Sajina, Amber R. Banks, Matthieu Béthermin, Carl Ferkinhoff, Andreea Petric, Alexandra Pope, Jianwei Lyu, Vivian U, L. Y. Aaron Yung, Pallavi Patil</p>
+							<p><strong>For Full modeling details, see:</strong> <a href="https://arxiv.org/abs/2509.15331" target="_blank" rel="noopener noreferrer">arXiv:2509.15331</a></p>
+						</div>
+					</div>
+				</section>
+
+				<!-- Overview -->
+				<section id="one">
+					<div class="inner">
+						<header class="major">
+							<h2>Overview</h2>
+						</header>
+						<p>
+					<p>
+					This website provides an overview of our updated Simulated Infrared Extragalactic Dusty Sky (SIDES) framework and the associated data products. The project focuses on modeling dust-obscured galaxies and active galactic nuclei (AGN) in the era of JWST.
+					Here we highlight key results, visualizations, and public data products derived from the simulations, including galaxy and AGN number counts and mid-infrared color–color diagnostics. These materials are intended to support interpretation of current and future JWST surveys.
+					For full details of the methodology, assumptions, and scientific analysis, we refer readers to the accompanying paper.
+					</p>
+
+					<p>Here we highlight the main results of our 2sq degree simulation that includes starforming main sequence galaxies, starburst, quiescent, star-forming AGN composite systems and AGN dominated systems in MIRI F1500W. The counts are available in MIRI F560W, F770W, F1000W, F1280W, F1500W, F1800W, F2100W, and F2550W as shown in the Vidal et al. 2025 paper.</p>
+					<p>The code for pySIDES is available <a href="https://gitlab.lam.fr/mbethermin/sides-public-release" target="SIDES public release" rel="noopener noreferrer">here</a>, and we plan to merge these updates into the main repository soon.</p>
+					</div>
+				</section>
+
+				<!-- Results Spotlights -->
+				<section id="two" class="spotlights">
+					<!-- Galaxy Counts -->
+					<section>
+						<a href="../images/galaxy_counts.png" class="image">
+							<img src="../images/galaxy_counts.png" alt="Galaxy number counts" data-position="center center" />
+						</a>
+						<div class="content">
+							<div class="inner">
+								<header class="major">
+									<h1>Galaxy Number Counts</h1>
+								</header>
+								<p>Integral number counts in the MIRI F1500W band for all galaxy populations from the pySIDES model, compared with other theoretical models and observational data. Adapted from Figure 6 of Vidal et al. (2025). Galaxy counts in 8 MIRI bands are available.</p>
+								<ul class="actions">
+									<li><a href="downloads/galaxy_number_counts.zip" class="button" download>Download Galaxy Counts</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<!-- AGN Counts -->
+					<section>
+						<a href="../images/agn_counts.png" class="image">
+							<img src="../images/agn_counts.png" alt="AGN number counts" data-position="center center" />
+						</a>
+						<div class="content">
+							<div class="inner">
+								<header class="major">
+									<h1>AGN Number Counts</h1>
+								</header>
+								<p>Contributions from star-forming composite AGN (blue), AGN-dominated systems (blue), and their combined contribution (black) to the total galaxy counts (gray), compared with results from Lyu et al. (2024). Adapted from Figure 11 of Vidal et al. (2025). AGN counts in 8 MIRI bands are available.</p>
+								<ul class="actions">
+									<li><a href="downloads/agn_number_counts.zip" class="button" download>Download AGN Counts</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<!-- Color-Color Diagrams -->
+					<section>
+						<a href="../images/pysides_color_color_diagrams.png" class="image">
+							<img src="../images/pysides_color_color_diagrams.png" alt="MIRI color-color diagnostic diagrams" data-position="center center" />
+						</a>
+						<div class="content">
+							<div class="inner">
+								<header class="major">
+									<h1>Color–Color Diagrams</h1>
+								</header>
+								<p>MIRI color–color diagnostic diagrams separating star-forming galaxies (SFGs), composite galaxies, and AGN from the modified pySIDES model. Photometric cuts and noise estimates are matched to the reported 5σ sensitivity limits of the SMILES survey (Alberts et al 2024). Adapted from Figure 18 of Vidal et al. (2025). Four seperate color-color diagrams are available.</p>
+								<ul class="actions">
+									<li><a href="../downloads/Figure_18_kde_contours.txt" class="button" download>Download Contours</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<!-- Cosmic Variance -->
+					<section>
+						<a href="../images/cosmic_variance.png" class="image">
+							<img src="../images/cosmic_variance.png" alt="Cosmic variance analysis" data-position="center center" />
+						</a>
+						<div class="content">
+							<div class="inner">
+								<header class="major">
+									<h1>Cosmic Variance</h1>
+								</header>
+								<p>Quantification of cosmic variance effects showing that surveys with areas below 25 arcmin<sup>2</sup> suffer from approximately 30% uncertainty in bright AGN counts.
+								Thankfully, imaging surveys like <a href="https://kirkpatrick.ku.edu/MEGA/" target="_blank" rel="noopener noreferrer">MEGA</a> (PI: Alison Kirkpatrick) and <a href="https://minerva.colorado.edu/?ra=34.2257767&dec=-5.2493753&zoom=9" target="_blank" rel="noopener noreferrer">MINERVA</a> (PI: Adam Muzzin) will be able to mitigate these effects. Data to reproduce this plot is available</p>
+
+									<li><a href="downloads/cosmic_variance.zip" class="button" download>Download Cosmic Variance</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</section>
+
+			</div>
+		
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/edgar-perez-vidal/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.instagram.com/edgar_thepaisano/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/edgar-perez-vidal" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="mailto:e.vidal8392@berkeley.edu" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Edgar Perez Vidal</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
